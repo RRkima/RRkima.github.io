@@ -23,30 +23,60 @@
             font-weight: bold;
         }
 
-        /* Center content */
-        main {
+        /* Two-column section */
+        .container {
             flex: 1;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
+            gap: 50px;
+            padding-top: 20px;
         }
-        .cmd {
-            font-family: "Courier New", monospace;
-            font-size: 1.2em;
+
+        /* Divider */
+        .divider {
+            width: 2px;
+            background-color: #555;
+        }
+
+        /* CMD box style */
+        .cmd-box {
             background-color: black;
             color: #FFFFFF;
             padding: 15px;
             border-radius: 5px;
+            font-family: "Courier New", monospace;
+            font-size: 1.2em;
+            min-width: 250px;
+        }
+
+        .cmd-box h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>Lorem Ipsum</header>
-    <main>
-        <div class="cmd">Ruatkima Documentation</div>
-        <div class="cmd">test1</div>
-        <div class="cmd">test2</div>
-        <div class="cmd">test3</div>
-    </main>
+
+    <div class="container">
+        <!-- Left CMD box -->
+        <div class="cmd-box">
+            <h2>Utility</h2>
+            <p>Command 1</p>
+            <p>Command 2</p>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Right CMD box -->
+        <div class="cmd-box">
+            <h2>Game Related</h2>
+            <p>Command A</p>
+            <p>Command B</p>
+        </div>
+    </div>
 </body>
 </html>
