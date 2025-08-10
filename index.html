@@ -21,6 +21,7 @@
             font-size: 5em;
             padding: 35px 0;
             font-weight: bold;
+            text-decoration: underline; /* Underline added */
         }
 
         /* Divider and content */
@@ -28,20 +29,21 @@
             flex: 1;
             display: flex;
             justify-content: center;
-            align-items: stretch;
+            align-items: flex-start;
             padding: 20px;
             gap: 10px;
-            overflow-x: auto; /* Allow horizontal scroll on small screens */
+            overflow-x: auto;
         }
 
         .cmd-box {
             flex: 1;
-            min-width: 250px; /* Prevent shrinking too small */
+            min-width: 200px; /* smaller width */
+            max-width: 300px; /* limit max size */
             font-family: "Courier New", monospace;
-            font-size: 1.2em;
+            font-size: 1em; /* smaller text */
             background-color: black;
             color: #FFFFFF;
-            padding: 15px;
+            padding: 10px; /* smaller padding */
             border-radius: 5px;
             box-sizing: border-box;
         }
@@ -50,6 +52,11 @@
             margin-top: 0;
             border-bottom: 1px solid #FFFFFF;
             padding-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        .cmd-box p {
+            margin: 5px 0;
         }
 
         /* Stack vertically on small screens */
@@ -62,19 +69,19 @@
     </style>
 </head>
 <body>
-    <header>Lorem Ipsum</header>
+    <header>RK Repository</header>
     <div class="divider-container">
         <div class="cmd-box">
-            <h2>Utility</h2>
-            <p>Test 1</p>
-            <p>Test 2</p>
-            <p>Test 3</p>
+            <h2>Utility/Tool</h2>
+            <p><a href="https://google.com">1</a> Test 1</p>
+            <p><a href="https://youtube.com">2</a> Test 2</p>
+            <p><a href="https://rrkima.github.io">3</a> Test 3</p>
         </div>
         <div class="cmd-box">
             <h2>Game Related</h2>
-            <p>Game 1</p>
-            <p>Game 2</p>
-            <p>Game 3</p>
+            <p><a href="https://steamrip.com">link</a> Direct download site link</p>
+            <p><a href="https://fitgirl-repacks.site">link</a> Torrent site link</p>
+            <p><a href="https://archive.org">3</a> Old game link</p>
         </div>
     </div>
 </body>
